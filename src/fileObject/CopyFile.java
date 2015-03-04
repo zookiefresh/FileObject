@@ -29,11 +29,9 @@ public class CopyFile {
         }
         catch (FileNotFoundException e) {
             System.out.println(e.getMessage());
-            return;
         }
         catch (IOException e){
             System.out.println(e.getMessage());
-            return;
         }
     }
 }
