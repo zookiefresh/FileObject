@@ -17,6 +17,16 @@ public class FileObjectExercise {
         System.out.println(myDir.isDirectory() ? "yep" : "nope");
         
         File myFile = new File(myDir, "file.txt");
+        System.out.println(myFile.getName());
+        System.out.println(myFile.getPath());
+        
+        File newDir = new File(myDir, "newDir");
+        newDir.mkdir();
+        String[] folders = myDir.list();
+        
+       for(String f :folders){
+           System.out.println(f);
+       }
 
     }    
 }
