@@ -23,8 +23,7 @@ public class CopyFile {
             byte[] info = new byte[100];
             while (bin.read(info) != -1){
                 bout.write(info);
-            }
-            
+            }            
             bin.close();
             bout.close();            
         }
